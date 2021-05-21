@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 :root{
+  --primary-color: #007bff;
   --background-color: #333;
   --secondary-color: #6c757d;
   --background-dark-color: #10121A;
@@ -14,16 +15,26 @@ const GlobalStyle = createGlobalStyle`
   --sidebar-dark-color: #191D2B;
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 1.2;
+  list-style: none;
+  font-size: 1.2rem;
   text-decoration: none;
+  font-family: 'Nunito' 'sans serif';
 }
 
 body {
   background-color: var(--background-dark-color);
+  color: var(--font-light-color);
+
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
 }
 `
 export default GlobalStyle;
