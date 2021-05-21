@@ -70,9 +70,11 @@ const NavigationStyled = styled.nav`
       display: block;
       a {
         display: block;
-        padding: .2rem 0;
+        padding: .45rem 0;
         position: relative;
         z-index: 4;
+        font-weight: 600;
+        letter-spacing: 1px;
         &:hover {
           cursor: pointer;
         }

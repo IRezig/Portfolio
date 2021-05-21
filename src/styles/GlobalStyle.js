@@ -16,25 +16,43 @@ const GlobalStyle = createGlobalStyle`
 }
 
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-size: 1.2rem;
   text-decoration: none;
-  font-family: 'Nunito' 'sans serif';
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
 }
 
 body {
   background-color: var(--background-dark-color);
   color: var(--font-light-color);
-
+  transition: all .4s ease-in-out;
 }
 
 a {
   font-family: inherit;
   color: inherit;
   font-size: inherit;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white-color);
+    span{
+        font-size: 4rem;
+        @media screen and (max-width: 502px){
+            font-size: 3rem
+        }
+    }
+    @media screen and (max-width: 502px){
+        font-size: 3rem
+    }
+}
+
+span{
+    color: var(--primary-color);
 }
 `
 export default GlobalStyle;
