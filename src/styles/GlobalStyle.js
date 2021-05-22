@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   --background-light-color: #F1F1F1;
   --white-color: #FFF;
   --font-light-color: #a4acc4;
+  --background-dark-grey: #191D2B;
   --font-dark-color: #313131;
   --font-dark-color-2: #151515;
   --sidebar-dark-color: #191D2B;

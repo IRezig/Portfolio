@@ -17,15 +17,19 @@ const PrimaryButtonStyled = styled.a`
   font-size: inherit;
   text-transform: uppercase;
   position: relative;
-  &:hover::after {
-    transform: All .4s ease-in-out;
+  transition: All .4s ease-in-out;
+  &::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: .2rem;
-    background-color: var(--white-color);
     left: 0;
     bottom: 0;
+    width: 0;
+    height: .2rem;
+    transition: All .4s ease-in-out;
+  }
+  &:hover::after {
+    background-color: var(--white-color);
+    width: 100%;
   }
 `
 
