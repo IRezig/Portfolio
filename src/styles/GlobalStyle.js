@@ -56,6 +56,11 @@ h1{
 span{
     color: var(--primary-color);
 }
+
+//Utilities
+.u-margin-bottom{
+  margin-bottom: 4rem;
+}
 `
 export default GlobalStyle;
 
