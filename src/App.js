@@ -1,4 +1,4 @@
-import Sidebar from './Components/Sidebar';
+import Sidebar from './Components/Sidebar'
 import styled from 'styled-components'
 import Routing from './routing'
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routing />
       </MainContentStyle>
     </div>
-  );
+  )
 }
 const MainContentStyle = styled.main`
   position: relative;
@@ -34,6 +34,6 @@ const MainContentStyle = styled.main`
       background-color: var(--border-color);
     }
   }
-`;
+`
 
-export default App;
+export default App
