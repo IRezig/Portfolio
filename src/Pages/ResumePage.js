@@ -1,20 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import Skills from '../Components/Skills'
-import { MainLayout, InnerLayout } from '../styles/Layouts'
-import Title from '../Components/Title'
+import Resume from '../Components/Resume'
+import { MainLayout } from '../styles/Layouts'
 
 function ResumePage() {
   return (
     <MainLayout>
       <ResumePageStyled>
-        <InnerLayout>
-          <Title title={'Resume'} span={'Resume'} />
-        </InnerLayout>
-        <Skills>
-
-        </Skills>
-
+        <Skills />
+        <Resume />
       </ResumePageStyled>
     </MainLayout>
   )
